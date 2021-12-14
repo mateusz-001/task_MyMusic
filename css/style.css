@@ -3,6 +3,7 @@
 }
 
 .form__wrapper {
+  max-width: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,7 +79,7 @@
 }
 
 .form__file {
-  width: 200px;
+  width: 300px;
   border: 1px solid #f8f8f8;
   background-color: #fff;
   border-radius: 20px;
@@ -89,8 +90,10 @@
 }
 
 .form__file::file-selector-button {
-  border: none;
+  border: 1px solid #cecece;
+  border-radius: 10px;
   background-color: #fff;
+  padding: 5px;
 }
 
 .form__file-paragraph {
@@ -136,6 +139,23 @@
   -webkit-box-shadow: 5px 5px 25px -13px #42445a;
           box-shadow: 5px 5px 25px -13px #42445a;
   padding: 10px;
+}
+
+.form__error-wrapper {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  margin: 30px;
+  background-color: #ff4f4f;
+  border-radius: 10px;
+}
+
+.form__error-message {
+  color: #fff;
+  text-align: center;
+}
+
+.form__error-message--active {
+  padding: 10px 30px;
 }
 
 * {
